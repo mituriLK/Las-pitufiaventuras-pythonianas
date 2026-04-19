@@ -1,0 +1,17 @@
+numero1=6
+numero2=7
+print("6 mas 7 es igual a")
+print(" ")
+print(numero1+numero2)
+print(" ")
+print("6 por 7 esigual a")
+print(" ")
+print(numero1*numero2)
+print(" ")
+print("6 dividido 7 es igual a ")
+print(" ")
+print(numero1/numero2)
+print(" ")
+print("6 menos siete es igual a")
+print(" ")
+print(numero1-numero2)
