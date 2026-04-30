@@ -20,7 +20,7 @@ else:
     total_por_persona = total
 
 
-print("\n" + "="*40)
+print("" + "="*40)
 print("RESUMEN DE LA CUENTA")
 print("="*40)
 print(f"Cliente: {nombre}")
@@ -41,22 +41,22 @@ else:
 
 
 if total >= 50000:
-    pagar_cuotas = input("\n¿Desea pagar en cuotas? (si/no): ").strip().lower()
+    pagar_cuotas = input("¿Desea pagar en cuotas? (si/no): ").strip().lower()
     
     if pagar_cuotas == "si":
-        print("\nOpciones disponibles: 3 | 6 | 9 | 12 cuotas")
+        print("Opciones disponibles: 3 | 6 | 9 | 12 cuotas")
         cuotas = int(input("¿En cuántas cuotas quiere pagar?: "))
         
         if cuotas in [3, 6, 9, 12]:
             monto_por_cuota = total / cuotas
-            print(f"\nPerfecto! Pagará ${monto_por_cuota:.2f} por mes durante {cuotas} meses.")
+            print(f"Perfecto! Pagará ${monto_por_cuota:.2f} por mes durante {cuotas} meses.")
         else:
             print("Lo siento, esa cantidad de cuotas no está disponible.")
     else:
         print("Perfecto, pago al contado disponible.")
 else:
-    print("\nPara pagos en cuotas el total debe ser mayor a $50.000")
+    print("Para pagos en cuotas el total debe ser mayor a $50.000")
 
-print("\n" + "="*40)
+print("" + "="*40)
 print("¡GRACIAS POR COMER CON NOSOTROS!")
 print("="*40)
